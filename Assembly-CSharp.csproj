@@ -51,8 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CameraMove.cs" />
-     <Compile Include="Assets\Scripts\MoveMol.cs" />
+     <Compile Include="Assets\Scripts\select.cs" />
      <Compile Include="Assets\VCUL\Scripts\DragCamera.cs" />
      <Compile Include="Assets\VCUL\Scripts\FlyCamera.cs" />
      <Compile Include="Assets\VCUL\Scripts\MTPCamera.cs" />
