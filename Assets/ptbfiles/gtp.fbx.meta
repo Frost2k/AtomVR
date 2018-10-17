@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: 498fcdc0369359547b6e84d66701499b
-timeCreated: 1519935083
-licenseType: Free
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: Ball_Carbon
     100002: Ball_HD
@@ -35801,6 +35799,7 @@ ModelImporter:
     6414284: Sulfur|Ball_Sulfur|Dupli|6.0.0.0.0.0.0.0.0
     6414286: Sulfur|Ball_Sulfur|Dupli|7.0.0.0.0.0.0.0.0
     10800000: Lamp
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -35820,6 +35819,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -35851,6 +35851,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
