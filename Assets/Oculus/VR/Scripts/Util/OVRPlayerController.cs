@@ -151,6 +151,7 @@ public class OVRPlayerController : MonoBehaviour
 	private float SimulationRate = 60f;
 	private float buttonRotation = 0f;
 	private bool ReadyToSnapTurn; // Set to true when a snap turn has occurred, code requires one frame of centered thumbstick to enable another snap turn.
+
 	void Start()
 	{
 		// Add eye-depth as a camera offset from the player controller
@@ -161,7 +162,6 @@ public class OVRPlayerController : MonoBehaviour
 
 	void Awake()
 	{
-
 		Controller = gameObject.GetComponent<CharacterController>();
 
 		if(Controller == null)
@@ -203,6 +203,10 @@ public class OVRPlayerController : MonoBehaviour
 
 	void Update()
 	{
+        if (OVRInput.GetDown(OVRInput.Button.One))
+        {
+            Debug.Log("yaaaaaaaas");
+        }
 		//Use keys to ratchet rotation
 		if (Input.GetKeyDown(KeyCode.Q))
 			buttonRotation -= RotationRatchet;
@@ -334,8 +338,8 @@ public class OVRPlayerController : MonoBehaviour
 				MoveScale = 0.70710678f;
 
 			// No positional movement if we are in the air
-			//if (!Controller.isGrounded)
-			//	MoveScale = 0.0f;
+			if (!Controller.isGrounded)
+				MoveScale = 0.0f;
 
 			MoveScale *= SimulationRate * Time.deltaTime;
 
